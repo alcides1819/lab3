@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABORATORIO 3</title>
+</head>
+<body>
+    <script>
+        let a=10;
+        let b=2;
+
+        function sumar (a,b){
+            return a+b;
+        }
+        function restar (a,b){
+            return a-b;
+        }
+        function multi (a,b){
+            return a*b;
+        }
+        function divi (a,b){
+            return a/b;
+        }
+        function realizarOperacion (a,b,operacion){
+            if (operacion==sumar);
+            document.write("La suma es: ",+suma);
+        }
+
+        let numero1=prompt("Su numero es: ",a);
+        let numero2=prompt("Su numero es: ",b);
+        let operacion=prompt("Ingrese la operacion(suma,resta,multi,divi)");
+
+        let resultado=realizarOperacion(numero1,numero2,operacion);
+
+        document.write("El resulado es: ",+resultado);
+        console.log("El resultado es: ",+resultado);
+
+
+    </script>
+    
+</body>
+</html>
