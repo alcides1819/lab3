@@ -23,8 +23,18 @@
             return a/b;
         }
         function realizarOperacion (a,b,operacion){
-            if (operacion==sumar);
-            document.write("La suma es: ",sumar);
+            switch(operacion){
+                case 'sumar':
+                    return sumar (a,b);
+                case 'restar':
+                    return restar (a,b);
+                case 'multi':
+                    return multi (a,b);
+                case 'divi':
+                    return divi (a,b);
+                default:
+                    return "ERROR !!...";   
+            }
         }
 
         let numero1=prompt("Su numero es: ",a);
@@ -33,8 +43,8 @@
 
         let resultado=realizarOperacion(numero1,numero2,operacion);
 
-        document.write("El resulado es: ",resultado);
-        console.log("El resultado es: ",resultado);
+        document.write("El resulado es: ",+resultado);
+        console.log("El resultado es: ",+resultado);
 
 
     </script>
