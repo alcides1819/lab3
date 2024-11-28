@@ -32,16 +32,16 @@
                     return multi (n1,n2);
                 case 'divi':
                     return divi (n1,n2);
-                default:
-                    return "ERROR !!...";   
+                case 'salir':
+                    document.write("Has terminado");       
             }
         }
         
         let numero1=parseFloat (prompt("Ingrese su primer numero es: "));
         let numero2=parseFloat (prompt("Ingrese su segundo numero es: "));
-        let operacion=prompt("Ingrese la operacion(sumar,restar,multi,divi)");   
+        let operacion=prompt("Ingrese la operacion(sumar,restar,multi,divi,salir)");   
         
-        let resultado=realizarOperacion(numero1,numero2,operacion);
+        let resultado=realizarOperacion(numero1,numero2,operacion,salir);
         
         document.write("El resultado es: ",+resultado);
         console.log("El resultado es: ",+resultado);
