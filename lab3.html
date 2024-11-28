@@ -9,7 +9,6 @@
     <script>
         let a=10;
         let b=2;
-        let operacion;
 
         function sumar (a,b){
             return a+b;
@@ -37,16 +36,13 @@
                     return "ERROR !!...";   
             }
         }
+        
         let numero1=parseFloat (prompt("Su primer numero es: ",a));
         let numero2=parseFloat (prompt("Su  segundo numero es: ",b));
-
-        while(true){
-            let operacion=prompt("Ingrese la operacion(sumar,restar,multi,divi)(salir):");
-            if (operacion.toLocaleLowerCase()==='salir'){
-            break;
-        }
-    }
+        let operacion=prompt("Ingrese la operacion(sumar,restar,multi,divi)");
+        
         let resultado=realizarOperacion(numero1,numero2,operacion);
+        
         document.write("El resultado es: ",+resultado);
         console.log("El resultado es: ",+resultado);
     </script>
