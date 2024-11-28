@@ -32,8 +32,6 @@
                     return multi (n1,n2);
                 case 'divi':
                     return divi (n1,n2);
-                case 'salir':
-                    return salir ();
                 default:
                     return "ERROR !!...";   
             }
@@ -41,11 +39,6 @@
         
         let numero1=parseFloat (prompt("Ingrese su primer numero es: "));
         let numero2=parseFloat (prompt("Ingrese su segundo numero es: "));
-        do{
-            let operacion=prompt("Ingrese la operacion(sumar,restar,multi,divi,salir)");   
-        }while(operacion="salir");
-        document.write("Has terminado");
-
         let resultado=realizarOperacion(numero1,numero2,operacion);
         
         document.write("El resultado es: ",+resultado);
