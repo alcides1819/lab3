@@ -36,11 +36,12 @@
                     return "ERROR !!...";   
             }
         }
-        while(true){
         let numero1=parseFloat (prompt("Su primer numero es: ",a));
         let numero2=parseFloat (prompt("Su  segundo numero es: ",b));
-        let operacion=prompt("Ingrese la operacion(sumar,restar,multi,divi)(salir):");
-        if (operacion.toLocaleLowerCase()==='salir'){
+
+        while(true){
+            let operacion=prompt("Ingrese la operacion(sumar,restar,multi,divi)(salir):");
+            if (operacion.toLocaleLowerCase()==='salir'){
             break;
         }
     }
