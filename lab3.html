@@ -22,9 +22,6 @@
         function divi (a,b){
             return a/b;
         }
-        function salir (a,b){
-            return "salir"
-        }
         function realizarOperacion (a,b,operacion){
             switch(operacion){
                 case 'sumar':
@@ -40,20 +37,14 @@
             }
         }
 
-        while(true){
         let numero1=parseFloat (prompt("Su primer numero es: ",a));
         let numero2=parseFloat (prompt("Su  segundo numero es: ",b));
-        let operacion=prompt("Ingrese la operacion(sumar,restar,multi,divi,salir)");
-        if (operacion==salir){
-            break;
-        }
+        let operacion=prompt("Ingrese la operacion(sumar,restar,multi,divi)");
         
         let resultado=realizarOperacion(numero1,numero2,operacion);
 
         document.write("El resultado es: ",+resultado);
         console.log("El resultado es: ",+resultado);
-        }
-        document.write("has salido del programa");
     </script>
     
 </body>
